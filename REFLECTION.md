@@ -1,0 +1,5 @@
+## Reflection
+
+Working backwards from the MCP specification forced me to think about map services as contracts instead of one-off HTTP calls. Encoding the command parameters as JSON Schema definitions made the OpenStreetMap/OSRM tools immediately reusable—those same schemas double as validation for human developers and as hints for the OpenAI assistant, which reduced hallucinated arguments during dry runs. The other major takeaway is the value of layering: keeping the `MapToolkit` separate from the assistant runtime means I can bolt the same tools onto different agent front-ends (Assistants API today, MCP-native servers once the OpenAI Agents SDK exposes them directly).
+
+If I had more time I would add a third server focused on rich basemap styling (MapLibre tiles + sprite manifests) and pair it with a lightweight cache so the screencast could show both data and rendering workflows. I would also like to wrap the HTTP calls in telemetry to capture rate-limit responses from the public endpoints; those insights would shape a future iteration that proxies requests through a self-hosted cache instead of hammering the community infrastructure.
