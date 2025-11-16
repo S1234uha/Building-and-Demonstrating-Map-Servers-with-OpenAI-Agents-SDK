@@ -64,9 +64,8 @@ pytest
 
 When recording the required 5–7 minute screencast:
 
-1. Start with a 60-second architecture overview (show the README diagram and summarize the servers).
+1. Start with a architecture overview (show the README diagram and summarize the servers).
 2. Launch `python app.py`, ask at least three questions (geocoding, POI search, routing) so every tool is exercised.
-3. Narrate how tool calls appear in the OpenAI dashboard (or describe the logs shown in the terminal).
-4. Close with lessons learned + mention of next steps (see `REFLECTION.md` for talking points).
 
-Sharing suggestions: upload the video as an unlisted YouTube link or DropBox share and include that URL alongside this repo.
+
+Sharing video:https://drive.google.com/file/d/1IocEFEkGeJ-BROQOU-zARAipjBXbQTVG/view?usp=sharing
